@@ -1,0 +1,195 @@
+ /* Splash screen styles */
+ #splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#main-content {
+    display: none;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+
+/* Submenu positioning */
+.dropdown-menu {
+    position: static;
+    --bs-dropdown-link-active-bg: rgba(58, 247, 200, 0.568);
+    --bs-dropdown-link-color: rgba(20, 20, 20, 0.753);
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+/* li > a{
+    color:rgba(58, 247, 200, 0.452) !important;
+    font-weight:bold !important;
+    font-size: larger;
+} */
+
+
+
+@media only screen and (max-width: 992px) {
+    #navbarNavDropdown  {
+        padding-left: 2% ;
+    }
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    .item-b img{
+        height: 120px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    #navbarNavDropdown {
+        padding-left: 3%;
+    }
+
+    .dropdown-item  {
+        font-size: 0.7rem;
+    }
+
+    h1{
+        font-size: 1.35rem !important;
+        margin-top: 15px;
+    }
+
+    p{
+        font-size: 12px;
+        
+    }
+
+    .item-b img{
+        display: none;
+    }
+
+    .outerContainer .container {
+        grid-gap: 5px;
+    }
+
+    footer span{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .ms-3 svg {
+        width: 14px;
+        height: 14px;
+    }
+
+} 
+
+#Last{
+    border-radius: 50% !important;
+
+}
+
+#mainPage{          
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(58, 247, 200, 0.452);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("./assets/environmental-cover.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* When nav items are clicked */
+.dropdown-item:focus{
+color:rgb(54, 54, 54) !important;
+font-weight:bold;
+}
+
+.outerContainer{
+    display: flex;
+    width:100%;
+    height: 80vh;
+    flex-direction: column;
+    background-color: rgba(58, 247, 200, 0.452);
+    justify-content: center;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns:80% 20%;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.item-a{
+    align-self: end;
+}
+
+.item-b{
+    align-self: end;
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: rgba(56, 56, 56, 0.897);
+    padding: 10px;
+    font-size: 3rem;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    position: absolute;
+    }
+
+    .container{
+
+    grid-gap: 30px;
+    }
+
+    .item-b img{
+        height: 200px;
+    }
+
+    .item-a{
+        align-self: center;
+    }
+
+}
