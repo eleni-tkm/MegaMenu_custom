@@ -7,4 +7,4 @@
 - Bootstrap
 - jquery
   
-***with splash screen and intentionally time delay before loading the main page***
+***with splash screen intentionally adding time delay before loading the main page***
